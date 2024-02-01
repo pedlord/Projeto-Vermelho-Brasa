@@ -1,4 +1,4 @@
-package VermelhoBrasa;
+package vermelho_brasa;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
