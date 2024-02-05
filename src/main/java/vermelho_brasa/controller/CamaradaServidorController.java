@@ -8,7 +8,7 @@ import org.springframework.web.bind.annotation.RestController;
 
 import lombok.RequiredArgsConstructor;
 import vermelho_brasa.model.CamaradaServidorModel;
-import vermelho_brasa.service.ICamaradaServidor;
+import vermelho_brasa.service.ICamaradaServidorService;
 
 
 
@@ -17,11 +17,11 @@ import vermelho_brasa.service.ICamaradaServidor;
 @RequiredArgsConstructor
 public class CamaradaServidorController {
 
-    private final ICamaradaServidor iCamaradaServidor;
+    private final ICamaradaServidorService iCamaradaServidorService;
 
     @GetMapping("path")
-    public Page<CamaradaServidorModel> salvarCamaradaServidor(@RequestParam CamaradaServidorModel camaradaServidorModel) {
-        return iCamaradaServidor.save(camaradaServidorModel, CamaradaServidorModel.class);
+    public CamaradaServidorModel salvarCamaradaServidor(@RequestParam CamaradaServidorModel camaradaServidorModel) {
+        return iCamaradaServidorService.save(camaradaServidorModel);
     }
     
 }

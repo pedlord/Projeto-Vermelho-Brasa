@@ -4,6 +4,6 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 import vermelho_brasa.model.CamaradaServidorModel;
 
-public interface CamaradaServidorRepository extends JpaRepository<CamaradaServidorModel, Integer> {
+public interface ICamaradaServidorRepository extends JpaRepository<CamaradaServidorModel, Integer> {
     
 }
